@@ -8,4 +8,5 @@ pipeline:
     secrets: [ docker_username, docker_password, ssh_key, remote_builders ]
     when:
       event: tag
-      tag: v*
+      ref: refs/tags/v*
+
